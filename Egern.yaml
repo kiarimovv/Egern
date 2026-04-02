@@ -241,23 +241,38 @@ rules:
     policy: 兜底分流
 scriptings:
 - generic:
-    name: 聚合热搜小组件
-    script_url: https://raw.githubusercontent.com/IBL3ND/module/refs/heads/main/HSW_Widget.JS
+    name: 和风天气小组件
+    script_url: https://raw.githubusercontent.com/IBL3ND/module/refs/heads/main/Weather_Widget.JS
 - generic:
-    name: 财联社小组件
-    script_url: https://raw.githubusercontent.com/IBL3ND/module/refs/heads/main/CLS_Widget.JS
+    name: 机场订阅小组件
+    script_url: https://raw.githubusercontent.com/IBL3ND/module/refs/heads/main/Sub_Widget.JS
 - generic:
-    name: 万年历小组件
-    script_url: https://raw.githubusercontent.com/IBL3ND/module/refs/heads/main/CN_Cal.JS
+    name: 南方电网小组件
+    script_url: https://raw.githubusercontent.com/IBL3ND/module/refs/heads/main/CSG_Widget.JS
 - generic:
-    name: 节日倒计时小组件
-    script_url: https://raw.githubusercontent.com/IBL3ND/module/refs/heads/main/Holiday_Countdown.js
+    name: 中国联通小组件
+    script_url: https://raw.githubusercontent.com/IBL3ND/module/refs/heads/main/Unicom_Widget.JS
+- generic:
+    name: 虚拟货币小组件
+    script_url: https://raw.githubusercontent.com/IBL3ND/module/refs/heads/main/Crypto_Widget.JS
 - generic:
     name: 油价查询小组件
     script_url: https://raw.githubusercontent.com/IBL3ND/module/refs/heads/main/Oil_Widget.JS
 - generic:
-    name: 虚拟货币小组件
-    script_url: https://raw.githubusercontent.com/IBL3ND/module/refs/heads/main/Crypto_Widget.JS
+    name: 节日倒计时小组件
+    script_url: https://raw.githubusercontent.com/IBL3ND/module/refs/heads/main/Holiday_Countdown.js
+- generic:
+    name: 万年历小组件
+    script_url: https://raw.githubusercontent.com/IBL3ND/module/refs/heads/main/CN_Cal.JS
+- generic:
+    name: 财联社小组件
+    script_url: https://raw.githubusercontent.com/IBL3ND/module/refs/heads/main/CLS_Widget.JS
+- generic:
+    name: 聚合热搜小组件
+    script_url: https://raw.githubusercontent.com/IBL3ND/module/refs/heads/main/HSW_Widget.JS
+- generic:
+    name: 彩票开奖小组件
+    script_url: https://raw.githubusercontent.com/IBL3ND/module/refs/heads/main/Lottery-Widget.JS
 - schedule:
     name: 每日摸鱼
     cron: 00 07 * * *
@@ -272,18 +287,28 @@ mitm:
   ca_p12: egern.p12
   ca_passphrase: egern
 widgets:
-- name: 油价查询
-  script_name: 油价查询小组件
+- name: 和风天气
+  script_name: 和风天气小组件
+- name: 机场订阅
+  script_name: 机场订阅小组件
+- name: 南方电网
+  script_name: 南方电网小组件
+- name: 中国联通
+  script_name: 中国联通小组件
 - name: 虚拟货币
   script_name: 虚拟货币小组件
+- name: 油价查询
+  script_name: 油价查询小组件
 - name: 节日倒计时
   script_name: 节日倒计时小组件
 - name: 万年历
   script_name: 万年历小组件
-- name: 聚合热搜
-  script_name: 聚合热搜小组件
 - name: 财联社
   script_name: 财联社小组件
+- name: 聚合热搜
+  script_name: 聚合热搜小组件
+- name: 彩票开奖
+  script_name: 彩票开奖小组件
 modules:
 - url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/HTTPDNS%E6%8B%A6%E6%88%AA%E5%99%A8.beta.sgmodule
   enabled: true
