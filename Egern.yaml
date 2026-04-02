@@ -21,13 +21,10 @@ dns:
     iosapps.itunes.apple.com:
     - iosapps.itunes.apple.com.download.ks-cdn.com
 policy_groups:
-- external:
+- select:
     name: 手动选择
-    type: select
-    urls:
-
+    policies: []
     icon: https://github.com/Repcz/Repcz.github.io/raw/main/docs/egern/Photo/Egern.png
-    hidden: false
 - select:
     name: 国外网站
     policies:
